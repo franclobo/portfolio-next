@@ -24,7 +24,7 @@ const PortfolioPage: React.FC<Projects> = () => {
       <h2 className="text-8xl text-gray-700 font-bold">
         My <span className="text-8xl text-primary font-bold">Portfolio</span>
       </h2>
-      <div className="grid grid-cols-3 gap-2 mt-10">
+      <div className="grid grid-cols-3 gap-2 my-10">
         {ProjectsItems.map((project) => (
           <MyPortfolio
             key={project.id}

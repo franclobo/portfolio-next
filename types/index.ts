@@ -17,7 +17,7 @@ export type Services = {
 export interface ButtonProps {
   text: string;
   icon: ReactNode;
-  onClick: () => void;
+  onClick: () => void | Promise<void>;
 }
 
 export type PersonalInfo = {
@@ -57,4 +57,11 @@ export interface Projects {
   image: string;
   url: string;
   languages: string[];
+}
+
+export interface EmailFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 }
