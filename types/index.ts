@@ -49,3 +49,12 @@ export interface Experience {
   icon: IconType;
   description: Activities[];
 }
+
+export interface Projects {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  languages: string[];
+}

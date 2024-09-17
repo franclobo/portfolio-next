@@ -4,7 +4,7 @@ import { FaRegFolderOpen } from "react-icons/fa";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FaBriefcase } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
-import { Menu, Services, PersonalInfo, Figures, Skills, Experience } from "@/types";
+import { Menu, Services, PersonalInfo, Figures, Skills, Experience, Projects } from "@/types";
 
 const calculateAgeYears = (date: string) => {
   const birthday = new Date(date);
@@ -280,8 +280,8 @@ export const ExperienceItems: Experience[] = [
   {
     title: "Code Reviewer",
     company: "Microverse",
-    dateFrom: "2022-01-08",
-    dateTo: "2023-01-04",
+    dateFrom: "2022-08-01",
+    dateTo: "2023-04-01",
     city: "United States - Remote",
     icon: FaBriefcase,
     description: [
@@ -302,8 +302,8 @@ export const ExperienceItems: Experience[] = [
   {
     title: "Auditor Compliance",
     company: "Vásquez & Asociados",
-    dateFrom: "2021-01-03",
-    dateTo: "2021-01-07",
+    dateFrom: "2021-03-01",
+    dateTo: "2021-07-01",
     city: "Quito",
     icon: FaBriefcase,
     description: [
@@ -324,8 +324,8 @@ export const ExperienceItems: Experience[] = [
   {
     title: "Manager assistant",
     company: "CELEC EP",
-    dateFrom: "2018-01-05",
-    dateTo: "2019-01-07",
+    dateFrom: "2018-05-01",
+    dateTo: "2019-07-01",
     city: "Quito",
     icon: FaBriefcase,
     description: [
@@ -347,7 +347,7 @@ export const ExperienceItems: Experience[] = [
     title: "Business Engineer",
     company: "National Polytechnical School",
     dateFrom: "2013-01-01",
-    dateTo: "2019-01-09",
+    dateTo: "2019-09-01",
     city: "Quito",
     icon: GiGraduateCap,
     description: [
@@ -360,8 +360,8 @@ export const ExperienceItems: Experience[] = [
   {
     title: "Full Stack Web Developer",
     company: "Microverse",
-    dateFrom: "2022-01-03",
-    dateTo: "2022-01-11",
+    dateFrom: "2022-03-01",
+    dateTo: "2022-11-01",
     city: "United States - Remote",
     icon: GiGraduateCap,
     description: [
@@ -370,5 +370,77 @@ export const ExperienceItems: Experience[] = [
           "Spent 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and Redux. Developed skills in remote pair programming using GitHub, industry-standard git-flow, and daily standups to communicate and collaborate with international remote developers.",
       },
     ],
+  },
+];
+
+export const ProjectsItems: Projects[] = [
+  {
+    id: 1,
+    title: "CaseCobra",
+    description:
+      "Capture your favorite unique image for your phone case. CaseCobra protects not only your memories, but also your cell phone.",
+    image:
+      "https://github.com/user-attachments/assets/3fbc2396-3ffc-4922-8952-7e2e42d9478a",
+    url: "https://casecobra-nine-iota.vercel.app",
+    languages: ["Typescript", "Next.js", "Paypal", "Tailwind CSS"],
+  },
+  {
+    id: 2,
+    title: "Pricewise",
+    description:
+      "Track product prices effortlessly and save money on your online purchases.",
+    image:
+      "https://github.com/user-attachments/assets/ee5a3670-02a6-4ebb-a288-5082424bb543",
+    url: "https://pricewise-azure-seven.vercel.app",
+    languages: ["Typescript", "Next.js", "Tailwind CSS"],
+  },
+  {
+    id: 3,
+    title: "Podcaster",
+    description: "Generate your podcast using AI.",
+    image:
+      "https://github.com/user-attachments/assets/ab2e1b64-ceda-4c2e-9fc4-a71583095c7f",
+    url: "https://podcaster-zeta.vercel.app",
+    languages: ["Typescript", "Next.js", "Tailwind CSS"],
+  },
+  {
+    id: 4,
+    title: "Real time search analytics",
+    description:
+      "A realtime search box, where users search articles, and then to have analytics that display what users were searching for. It can also track via IP. It records the user's input in realtime and ultimately display analytics & trends on what people are searching for the most.",
+    image:
+      "https://github.com/user-attachments/assets/172c2d2b-83e6-48da-84f9-5d24eafb00d1",
+    url: "https://real-time-searching-bead1baa36ca.herokuapp.com/",
+    languages: ["Ruby", "Ruby on Rails", "PostgreSQL"],
+  },
+  {
+    id: 5,
+    title: "Budget",
+    description:
+      "A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+    image:
+      "https://user-images.githubusercontent.com/58642949/203126520-d6f9f000-8f78-496c-b18e-a04cb95f83c5.png",
+    url: "https://budget-2024-44f4924cb6b3.herokuapp.com/",
+    languages: ["Ruby", "Ruby on Rails", "PostgreSQL"],
+  },
+  {
+    id: 6,
+    title: "Ecommerce Ruby",
+    description:
+      "Ecommerce Ruby is a project that allows users to buy and sell products online. Users can create an account, add products to their cart, and make purchases. Sellers can create products, manage their inventory, and view sales reports. It uses PayPal for payment processing.",
+    image:
+      "https://github.com/user-attachments/assets/32c2f73c-0b12-413b-a8bf-4531756f620a",
+    url: "https://github.com/franclobo/ecommerce_ruby",
+    languages: ["Ruby", "Ruby on Rails", "PostgreSQL", "Paypal"],
+  },
+  {
+    id: 7,
+    title: "Age calculator app",
+    description:
+      "A simple age calculator app that calculates your age based on your birthdate.",
+    image:
+      "https://play-lh.googleusercontent.com/iQt8qPw5N2yFOJLorVajzXQmu0_XUScIaPtIMysVijynmlO55G6pzfsqDADYTbpyatCw=w2560-h1440-rw",
+    url: "https://play.google.com/store/apps/details?id=com.agecalculator2024&pcampaignid=web_share",
+    languages: ["React Native", "Typesript"],
   },
 ];

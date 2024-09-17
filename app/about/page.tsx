@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div className="flex flex-col text-center container px-20 mt-10">
       <h2 className="text-8xl text-gray-700 font-bold">
-        About {""}
+        About {" "}
         <span className="text-8xl text-primary font-bold">Me</span>
       </h2>
       <div className="flex items-center justify-around mt-10">

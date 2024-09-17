@@ -6,6 +6,7 @@ export const Experience:React.FC<ExperienceType> = ({title, company, dateFrom, d
     const options: Intl.DateTimeFormatOptions = {
       year: "numeric",
       month: "long",
+      timeZone: "UTC",
     };
     return new Date(date).toLocaleDateString("en-US", options);
   }
