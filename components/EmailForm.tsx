@@ -44,7 +44,10 @@ export const EmailForm = () => {
   };
 
   return (
-    <form className="flex flex-col w-full" onSubmit={handleSubmit}>
+    <form
+      className="dark:text-white flex flex-col w-full"
+      onSubmit={handleSubmit}
+    >
       <div className="flex items-center justify-between gap-4">
         <input
           type="text"

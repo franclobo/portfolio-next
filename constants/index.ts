@@ -4,7 +4,8 @@ import { FaRegFolderOpen } from "react-icons/fa";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FaBriefcase } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
-import { Menu, Services, PersonalInfo, Figures, Skills, Experience, Projects } from "@/types";
+import { FaDroplet } from "react-icons/fa6";
+import { Menu, Services, PersonalInfo, Figures, Skills, Experience, Projects, Themes } from "@/types";
 
 const calculateAgeYears = (date: string) => {
   const birthday = new Date(date);
@@ -415,16 +416,6 @@ export const ProjectsItems: Projects[] = [
   },
   {
     id: 5,
-    title: "Budget",
-    description:
-      "A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-    image:
-      "https://user-images.githubusercontent.com/58642949/203126520-d6f9f000-8f78-496c-b18e-a04cb95f83c5.png",
-    url: "https://budget-2024-44f4924cb6b3.herokuapp.com/",
-    languages: ["Ruby", "Ruby on Rails", "PostgreSQL"],
-  },
-  {
-    id: 6,
     title: "Ecommerce Ruby",
     description:
       "Ecommerce Ruby is a project that allows users to buy and sell products online. Users can create an account, add products to their cart, and make purchases. Sellers can create products, manage their inventory, and view sales reports. It uses PayPal for payment processing.",
@@ -434,7 +425,7 @@ export const ProjectsItems: Projects[] = [
     languages: ["Ruby", "Ruby on Rails", "PostgreSQL", "Paypal"],
   },
   {
-    id: 7,
+    id: 6,
     title: "Age calculator app",
     description:
       "A simple age calculator app that calculates your age based on your birthdate.",
@@ -443,4 +434,67 @@ export const ProjectsItems: Projects[] = [
     url: "https://play.google.com/store/apps/details?id=com.agecalculator2024&pcampaignid=web_share",
     languages: ["React Native", "Typesript"],
   },
+];
+
+export const ThemesItems: Themes[] = [
+  {
+    id: 1,
+    color: "252, 35%, 51%",
+    icon: FaDroplet,
+  },
+  {
+    id: 2,
+    color: "0, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 3,
+    color: "180, 100%, 25%",
+    icon: FaDroplet,
+  },
+  {
+    id: 4,
+    color: "60, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 5,
+    color: "300, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 6,
+    color: "120, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 7,
+    color: "30, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 8,
+    color: "210, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 9,
+    color: "90, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 10,
+    color: "240, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 11,
+    color: "270, 100%, 50%",
+    icon: FaDroplet,
+  },
+  {
+    id: 12,
+    color: "330, 100%, 50%",
+    icon: FaDroplet,
+  }
 ];

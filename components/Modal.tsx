@@ -21,7 +21,10 @@ export const Modal: React.FC<ModalProps> = ({
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative flex flex-col items-center justify-center bg-white p-6 w-[400px] rounded-lg shadow-lg">
         {/* Botón de cierre */}
-        <div className="absolute -top-5 -right-5 cursor-pointer" onClick={onClose}>
+        <div
+          className="absolute -top-5 -right-5 cursor-pointer"
+          onClick={onClose}
+        >
           <IoMdCloseCircleOutline className="text-2xl text-white cursor-pointer" />
         </div>
         {/* Contenido del modal */}

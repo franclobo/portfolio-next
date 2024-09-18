@@ -11,7 +11,7 @@ interface PortfolioProps {
 export const Portfolio: React.FC<PortfolioProps> = ({ project, onClick }) => {
   return (
     <div
-      className="relative flex flex-col items-start border border-solid border-gray-400 w-[360px] rounded-xl overflow-hidden"
+      className="dark:text-white relative flex flex-col items-start border border-solid border-gray-400 w-[360px] rounded-xl overflow-hidden"
       onClick={onClick} // Llamar onClick al hacer click en el proyecto
     >
       {/* Imagen del proyecto */}

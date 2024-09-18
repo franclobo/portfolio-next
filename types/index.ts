@@ -65,3 +65,10 @@ export interface EmailFormData {
   subject: string;
   message: string;
 }
+
+export interface Themes {
+  id: number;
+  color: string;
+  icon: IconType;
+  onClick?: (color: string) => void;
+}

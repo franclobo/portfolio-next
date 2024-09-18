@@ -12,7 +12,7 @@ export const Experience:React.FC<ExperienceType> = ({title, company, dateFrom, d
   }
 
   return (
-    <div className="flex items-start justify-start gap-4">
+    <div className="dark:text-white flex items-start justify-start gap-4">
       <div className="relative flex flex-col items-center">
         <div className="bg-primary p-2 rounded-full">
           <IconComponent className="text-white text-2xl" />
@@ -22,20 +22,28 @@ export const Experience:React.FC<ExperienceType> = ({title, company, dateFrom, d
       <div className="flex flex-col gap-2 items-start">
         <div className="flex flex-col items-start">
           <div className="flex items-center gap-2 bg-gray-300 rounded-full px-2">
-            <p className="text-xs">
+            <p className="text-xs dark:text-black">
               {formatDate(dateFrom)} - {formatDate(dateTo)}
             </p>
           </div>
           <div className="flex gap-2">
-            <h4 className="text-lg text-gray-700 font-bold">{title}</h4>
-            <span className="text-lg text-gray-700 font-bold"> - </span>
-            <p className="text-lg text-gray-700">{company}</p>
+            <h4 className="dark:text-white text-lg text-gray-700 font-bold">
+              {title}
+            </h4>
+            <span className="dark:text-white text-lg text-gray-700 font-bold">
+              {" "}
+              -{" "}
+            </span>
+            <p className="dark:text-white text-lg text-gray-700">{company}</p>
           </div>
-          <p className="text-gray-600 text-sm">{city}</p>
+          <p className="dark:text-white text-gray-600 text-sm">{city}</p>
         </div>
         <div className="flex flex-col gap-2">
           {description.map((activity, index) => (
-            <p key={index} className="text-gray-600 self-left text-left">
+            <p
+              key={index}
+              className="dark:text-white text-gray-600 self-left text-left"
+            >
               {activity.activity}
             </p>
           ))}
