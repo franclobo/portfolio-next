@@ -53,28 +53,28 @@ export const EmailForm = () => {
           type="text"
           name="name"
           placeholder="Name"
-          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4"
+          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4 dark:text-white dark:bg-gray-800"
           onChange={handleChange}
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4"
+          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4 dark:text-white dark:bg-gray-800"
           onChange={handleChange}
         />
         <input
           type="text"
           name="subject"
           placeholder="Subject"
-          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4"
+          className="w-full p-2 border border-solid border-gray-400 rounded-md mb-4 dark:text-white dark:bg-gray-800"
           onChange={handleChange}
         />
       </div>
       <textarea
         name="message"
         placeholder="Message"
-        className="w-full h-[200px] p-2 border border-solid border-gray-400 rounded-md mb-4"
+        className="w-full h-[200px] p-2 border border-solid border-gray-400 rounded-md mb-4 dark:text-white dark:bg-gray-800"
         onChange={handleChange}
       />
       {/* Botón que no necesita evento */}

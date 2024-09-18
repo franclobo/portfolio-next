@@ -53,25 +53,25 @@ export const Themes = () => {
   return (
     <div className="z-10 fixed left-0 top-[10%] font-bold">
       <div className="relative flex flex-col gap-4">
-        <div className="style__switcher--toogler" onClick={OpenSwitcher}>
-          <IoMdSettings className="bg-white w-6 h-6 p-1 text-gray-500" />
+        <div onClick={OpenSwitcher}>
+          <IoMdSettings className="bg-white w-6 h-6 p-1 text-gray-500 rounded-r-[3px]" />
         </div>
-        <div className="theme__toggler" onClick={toggleTheme}>
+        <div onClick={toggleTheme}>
           {theme === "light" ? (
-            <LuMoon className="bg-white w-6 h-6 p-1 text-gray-500" />
+            <LuMoon className="bg-white w-6 h-6 p-1 text-gray-500 rounded-r-[3px]" />
           ) : (
-            <GoSun className="bg-white w-6 h-6 p-1 text-gray-500" />
+            <GoSun className="bg-white w-6 h-6 p-1 text-gray-500 rounded-r-[3px]" />
           )}
         </div>
         {showSwitcher && (
           <div className="absolute -top-1 -left-1 bg-white w-[150px] p-1 dark:bg-slate-500">
             <div>
               <div className="flex items-center justify-between">
-                <h3 className="style__switcher-title text-center">
+                <h3 className="text-center">
                   Style Switcher
                 </h3>
                 <div
-                  className="style__switcher-close cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                   onClick={CloseSwitcher}
                 >
                   &times;
