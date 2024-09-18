@@ -11,7 +11,7 @@ import { Experience } from "@/components/Experience";
 const About = () => {
   const route = useRouter();
   const onhandleDownload = () => {
-    route.push("Borja Francisco CV 2023.pdf");
+    route.push("Borja-Francisco-CV-2024.pdf");
   }
 
   return (
