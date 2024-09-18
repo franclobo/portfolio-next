@@ -5,9 +5,9 @@ import { Portfolio as MyPortfolio } from "@/components/Portfolio";
 import { Modal } from "@/components/Modal";
 import { Projects } from "@/types";
 
-const PortfolioPage: React.FC<Projects> = () => {
+const PortfolioPage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Projects | null>(null); // Usa `Project`
 
   const openModal = (project: Projects) => {
     setSelectedProject(project);
